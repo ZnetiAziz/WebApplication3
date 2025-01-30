@@ -1,0 +1,15 @@
+﻿@model WebApplication3.Models.User
+
+<h2>Sign Up</h2>
+<form method="post">
+    <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" asp-for="Name" required>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" asp-for="Password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
+<p>Already have an account? <a href="/User/Login">Login</a></p>
